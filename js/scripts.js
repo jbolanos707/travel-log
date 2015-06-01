@@ -40,8 +40,7 @@ $(function(){
 
     $('ul.country').append('<li class="remove-li">' + '<span class="description">' + place.country + " " + '</span>' + '<span class="remove">Delete</span>' + '</li>');
 
-    $(".remove").click(function() {
-
+    $(".remove").last().click(function() {
       $(this).parent().remove();
 
     });
