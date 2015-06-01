@@ -1,0 +1,57 @@
+<html>
+  <head>
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Travel App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class= "jumbotron">
+        <h1> Your Travels App</h1>
+      </div>
+
+      <h1>Track your travels.</h1>
+
+      <form id="travel-form">
+        <label for="country"><h2> Enter Country:</h2> </label>
+        <input id = "country" type="text" class= "form-control">
+
+      <div id="new-city">
+        <div class= "city">
+          <label for="city"><h2> Enter City:</h2> </label>
+          <input class= "form-control input-city" type="text">
+        </div>
+      </div>
+
+      <div id="new-site">
+        <div class= "favorite-site">
+          <label for="favorite-site"><h2> Enter Favorite Site:</h2> </label>
+          <input class= "form-control input-site" type="text">
+        </div>
+      </div>
+
+
+        <br><br>
+
+        <span class="btn btn-info" id="addcity">Add City</span>
+        <span class="btn btn-info" id="addsite">Add Site</span>
+        <button class="btn btn-success" type="submit">Submit</button>
+
+      </form>
+
+      <div id="show-places">
+        <p class="lead">Places</p>
+
+        <p>Country:<span class="country"></span></p>
+        <p>Cities:<p>
+        <ul id="cities"></ul>
+        <p>Favorite Sites:</p>
+        <ul id="favorite-sites"></ul>
+
+    </div>
+
+  </body>
+</html>
