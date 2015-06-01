@@ -25,7 +25,7 @@ $(function(){
 
     $(".city").each(function() {
       var inputtedCity = $(this).find("input.input-city").val();
-debugger;
+
       var newCity = { visitedCity: inputtedCity };
       place.cities.push(newCity);
     });
@@ -38,43 +38,35 @@ debugger;
       place.sites.push(newSite);
     });
 
-    $('.country').text(place.country);
+    $('ul.country').append('<li class="remove-li">' + '<span class="description">' + place.country + " " + '</span>' + '<span class="remove">Delete</span>' + '</li>');
 
+    $(".remove").click(function() {
 
-    // $("ul#cities").text("");
-      place.cities.forEach(function(city){
-        $('ul#cities').append('<li>' + city.visitedCity + "</li>");
-      });
+      $(this).parent().remove();
 
-    place.sites.forEach(function(site){
-      $('ul#favorite-sites').append('<li>' + site.favoriteSite + "</li>");
     });
 
-    $("#show-places").show();
+    $(".description").last().click(function() {
+      $("#show-places").show();
+
+      $("ul#cities").text("");
+      place.cities.forEach(function(city){
+        $('ul#cities').append('<li>' + city.visitedCity + "</li>");
+
+
+
+      });
+
+      $("ul#favorite-sites").text("");
+      place.sites.forEach(function(site){
+        $('ul#favorite-sites').append('<li>' + site.favoriteSite + "</li>");
+      });
+    });
+
 
     $('input#country').val("");
     $('input.input-city').val("");
     $('input.input-site').val("");
 
-
-
   });
-
-  $('.country').text(place.country);
-
-  cities.forEach(function(city){
-    $('ul#cities').append('<li>' + city.city + "</li>");
-  });
-
-  sites.forEach(function(site){
-    $('ul#favorite-sites').append('<li>' + site.site + "</li>");
-  });
-
-  $("#show-places").show();
-
-  $('input#country').val("");
-  $('input.city').val("");
-  $('input.favorite-site').val("");
-
-
 });
