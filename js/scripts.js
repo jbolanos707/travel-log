@@ -38,12 +38,14 @@ $(function(){
       place.sites.push(newSite);
     });
 
-    $('ul.country').append('<li class="remove-li">' + '<span class="description">' + place.country + " " + '</span>' + '<span class="remove">Delete</span>' + '</li>');
+    $('ul.country').append('<li class="remove-li">' + '<span class="description">' + place.country + " " + '</span>' + '<span class="remove">  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Delete</span>' + '</li>');
 
-    $(".remove").last().click(function() {
-      $(this).parent().remove();
+        $(".remove").click(function() {
 
-    });
+            $(this).parent().remove();
+
+          });
+
 
     $(".description").last().click(function() {
       $("#show-places").show();

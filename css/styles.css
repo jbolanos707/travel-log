@@ -7,6 +7,10 @@
   color: #0088cc;
 }
 
+body {
+  background: url("https://ununsplash.imgix.net/36/xIsiRLngSRWN02yA2BbK_submission-photo-7.jpg?dpr=1.5&fit=crop&fm=jpg&h=725&q=75&w=1050");
+}
+
 /*.country:hover {
   text-decoration: underline;
 }*/
