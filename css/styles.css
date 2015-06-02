@@ -11,6 +11,29 @@ body {
   background: url("https://ununsplash.imgix.net/36/xIsiRLngSRWN02yA2BbK_submission-photo-7.jpg?dpr=1.5&fit=crop&fm=jpg&h=725&q=75&w=1050");
 }
 
-/*.country:hover {
-  text-decoration: underline;
-}*/
+p {
+  font-family: century gothic;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+#header {
+  font-family: century gothic;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container {
+  background: #e2edff;
+}
+
+.form-control {
+  width: 50%;
+  alignment: center;
+}
+
+.jumbotron {
+  background: white;
+}

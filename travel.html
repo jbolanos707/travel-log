@@ -9,14 +9,12 @@
   </head>
   <body>
     <div class="container">
+
+      <p class="text-center page-header">TRAVEL LOG</p>
+        <br>
+
       <div class= "jumbotron">
-        <h1>TRAVEL LOG</h1>
-      </div>
-
-    
-      <h2>TRACK YOUR TRAVELS</h2>
-
-      <p class="lead">Places Visited:</p>
+      <p class="lead" id="header">Places Visited:</p>
       <ul class="country"></ul>
 
       <div id="show-places">
@@ -27,22 +25,23 @@
           <p>Favorite Sites:</p>
           <ul id="favorite-sites"></ul>
         </div>
+      </div>
 
       <form id="travel-form">
-        <label for="country"><h4> Enter Country:</h4> </label>
-        <input id = "country" type="text" class= "form-control">
+        <label for="country"><h4>Country Visited:</h4> </label>
+        <input id = "country" type="text" class= "form-control" placeholder="France, Japan, Mexico">
 
       <div id="new-city">
         <div class= "city">
-          <label for="city"><h4> Enter City:</h4> </label>
-          <input class= "form-control input-city" type="text">
+          <label for="city"><h4>City Visited:</h4> </label>
+          <input class= "form-control input-city" type="text" placeholder="San Francisco, Paris, Hong Kong">
         </div>
       </div>
 
       <div id="new-site">
         <div class= "favorite-site">
-          <label for="favorite-site"><h4> Enter Favorite Site:</h4> </label>
-          <input class= "form-control input-site" type="text">
+          <label for="favorite-site"><h4>Favorite Site:</h4> </label>
+          <input class= "form-control input-site" type="text" placeholder="Eiffel Tower, Leaning Tower of Piza, The Great Pyramids">
         </div>
       </div>
 
