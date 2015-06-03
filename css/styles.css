@@ -2,9 +2,11 @@
   display: none;
 }
 
-.country {
+ul.country {
   cursor: pointer;
   color: #0088cc;
+  list-style-image: url("images/plane20.png");
+
 }
 
 body {
@@ -13,27 +15,138 @@ body {
 
 p {
   font-family: century gothic;
-  color: white;
+  color: #1e3e4a;
   font-weight: bold;
   font-size: 60px;
 }
 
-#header {
-  font-family: century gothic;
-  color: black;
-  font-weight: bold;
+p.header {
+  font: 95% Arial, Helvetica, sans-serif;
+  color: #f21c00;
+  font-weight: 300;
   font-size: 20px;
 }
 
-.container {
-  background: #e2edff;
+.description {
+  font-size: 20px;
 }
 
-.form-control {
-  width: 50%;
-  alignment: center;
+.places-visited {
+  background: #9bddd8;
+  opacity: 0.8;
+  padding: 30px;
+  width: 670px;
+  float: right;
+  margin-right: 100px;
 }
 
-.jumbotron {
-  background: white;
+#cities {
+  font-weight: 300;
+  color: #337ab7;
+  font: 120% Arial, Helvetica, sans-serif;
+
+}
+
+#favorite-sites {
+  font-weight: 300;
+  color: #337ab7;
+  font: 120% Arial, Helvetica, sans-serif;
+}
+
+p.cities-sites {
+  font: 120% Arial, Helvetica, sans-serif;
+  color: #f21c00;
+  font-weight: 300;
+
+}
+
+img.header-pic {
+  display: block;
+  margin: 0px auto;
+
+}
+
+#travel-form {
+  margin-left: 100px;
+  width: 400px;
+}
+
+
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: .4px auto;
+    padding: 50px;
+    background: #F7F7F7;
+    float: left;
+}
+.form-style-6 h1{
+    background: #9bddd8;
+    padding: 35px ;
+    font-size: 160%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -50px -50px 20px -50px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 7%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #9bddd8;
+    border-bottom: 2px solid #9bddd8;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #43D1AF;
 }

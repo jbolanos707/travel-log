@@ -10,53 +10,48 @@
   <body>
     <div class="container">
 
-      <p class="text-center page-header">TRAVEL LOG</p>
+      <img src="img/TRAVEL2.png" alt="travel header" class="header-pic"/>
+
         <br>
 
-      <div class= "jumbotron">
-      <p class="lead" id="header">Places Visited:</p>
+      <div class= "places-visited">
+      <p class="header">Places Visited:</p>
       <ul class="country"></ul>
 
       <div id="show-places">
-        <p class="lead">Places</p>
 
-        <p>Cities:<p>
+        <p class="cities-sites">Cities:<p>
           <ul id="cities"></ul>
-          <p>Favorite Sites:</p>
+        <p class="cities-sites">Favorite Sites:</p>
           <ul id="favorite-sites"></ul>
         </div>
       </div>
 
-      <form id="travel-form">
-        <label for="country"><h4>Country Visited:</h4> </label>
-        <input id = "country" type="text" class= "form-control" placeholder="France, Japan, Mexico">
+    <form id="travel-form">
+      <div class="form-style-6">
+        <h1>My Travels</h1>
+        <form>
+          <input id="country" type="text" name="field1" placeholder="Enter Country">
 
-      <div id="new-city">
-        <div class= "city">
-          <label for="city"><h4>City Visited:</h4> </label>
-          <input class= "form-control input-city" type="text" placeholder="San Francisco, Paris, Hong Kong">
-        </div>
+          <div id="new-city">
+            <div class="city">
+              <input class="input-city" type="text" name="field2" placeholder="Enter City">
+            </div>
+          </div>
+
+          <div id="new-site">
+            <div class="favorite-site">
+              <input class="input-site" type="text" name="field3" placeholder="Enter Favorite Site">
+            </div>
+          </div>
+          <br>
+          <input id="addcity" type="button" value="Add Another City">
+          <br><br>
+          <input id="addsite" type="button" value="Add Another Site">
+          <br><br>
+          <input type="submit" value="Submit">
       </div>
-
-      <div id="new-site">
-        <div class= "favorite-site">
-          <label for="favorite-site"><h4>Favorite Site:</h4> </label>
-          <input class= "form-control input-site" type="text" placeholder="Eiffel Tower, Leaning Tower of Piza, The Great Pyramids">
-        </div>
-      </div>
-
-
-        <br><br>
-
-        <span class="btn btn-info" id="addcity">Add City</span>
-        <span class="btn btn-info" id="addsite">Add Site</span>
-        <button class="btn btn-success" type="submit">Submit</button>
-
-      </form>
-
-
-
+    </form>
     </div>
-
   </body>
 </html>
