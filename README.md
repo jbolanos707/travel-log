@@ -14,6 +14,7 @@ Travel Log is a simple app that acts like a travel journal. The app allows you t
 - input countries
 - input cities
 - input favorite sites
+
 It then displays all this information on the right side of the webpage.
 
 ### Author(s)
